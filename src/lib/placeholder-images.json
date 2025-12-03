@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "phone-1",
+      "description": "A modern smartphone with a clean interface, placed on a light-colored surface.",
+      "imageUrl": "https://images.unsplash.com/photo-1761907174062-c8baf8b7edb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c21hcnRwaG9uZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY0Njc3Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartphone technology"
+    },
+    {
+      "id": "phone-2",
+      "description": "Side view of a sleek smartphone, highlighting its thin profile and camera bump.",
+      "imageUrl": "https://images.unsplash.com/photo-1706097081308-1409b8c7a030?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2JpbGUlMjBkZXZpY2V8ZW58MHx8fHwxNzY0NzQzNzk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile device"
+    },
+    {
+      "id": "phone-3",
+      "description": "A person holding a professional-looking smartphone, with the screen displaying a colorful wallpaper.",
+      "imageUrl": "https://images.unsplash.com/photo-1470434767159-ac7bf1b43351?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwaG9uZXxlbnwwfHx8fDE3NjQ3MTkzNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person phone"
+    },
+    {
+      "id": "phone-4",
+      "description": "Close-up of a smartphone's camera array, showing multiple lenses.",
+      "imageUrl": "https://images.unsplash.com/photo-1618228123700-a1c948bb2bd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaG9uZSUyMGNhbWVyYXxlbnwwfHx8fDE3NjQ3NDM3OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phone camera"
+    },
+    {
+      "id": "phone-5",
+      "description": "A smartphone with a vibrant OLED screen, showcasing deep blacks and bright colors.",
+      "imageUrl": "https://images.unsplash.com/photo-1723609275983-9496fa96e8fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwaG9uZSUyMHNjcmVlbnxlbnwwfHx8fDE3NjQ3NDM3OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phone screen"
+    },
+    {
+      "id": "phone-6",
+      "description": "A uniquely designed smartphone with transparent elements, placed on a minimalist background.",
+      "imageUrl": "https://images.unsplash.com/photo-1683207906680-ee74d1425423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMHBob25lfGVufDB8fHx8MTc2NDc0Mzc5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic phone"
+    }
+  ]
 }
