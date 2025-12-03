@@ -2,8 +2,10 @@
 
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/logo';
-import { useAuth } from '@/hooks/use-auth';
 import { LoadingSpinner } from '@/components/loading-spinner';
+import { signIn, useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 function GoogleIcon() {
   return (
@@ -17,7 +19,33 @@ function GoogleIcon() {
 }
 
 export default function LoginPage() {
-  const { signInWithGoogle, loading } = useAuth();
+  const [loading, setLoading] = useState(false);
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.replace('/phones');
+    }
+  }, [status, router]);
+
+  const handleSignIn = async () => {
+    setLoading(true);
+    try {
+      await signIn('google', { callbackUrl: '/phones' });
+    } catch (error) {
+      console.error('Sign in failed', error);
+      setLoading(false);
+    }
+  };
+
+  if (status === 'loading' || status === 'authenticated') {
+    return (
+      <div className="flex h-screen w-full items-center justify-center bg-background">
+        <LoadingSpinner className="h-8 w-8 text-primary" />
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
@@ -36,7 +64,7 @@ export default function LoginPage() {
         <Button
           variant="outline"
           type="button"
-          onClick={signInWithGoogle}
+          onClick={handleSignIn}
           disabled={loading}
           className="w-full"
         >
